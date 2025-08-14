@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics & The Box Model</title>
+    <!-- Linking external stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Welcome to Eugene's CSS Demo</h1>
+      <p>A simple page to demonstrate CSS basics and the Box Model</p>
+    </header>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#cards">Cards</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="section1" class="content-section">
+        <h2>Section 1: Text Styling</h2>
+        <p class="intro-paragraph">
+          This paragraph demonstrates basic text styling using CSS. We've
+          applied font size, color, line height, and text alignment to improve
+          readability and visual appeal.
+        </p>
+        <p class="styled-text">
+          This text has a background color, padding, border, and margin —
+          showing how the <strong>CSS Box Model</strong> works.
+        </p>
+      </section>
+
+      <section id="section2" class="content-section">
+        <h2>Section 2: Spacing & Layout</h2>
+        <div class="box-demo">
+          <p>Box 1: Has padding and border.</p>
+        </div>
+        <div class="box-demo wide-margin">
+          <p>
+            Box 2: Same as above but with extra margin to show outer spacing.
+          </p>
+        </div>
+        <div class="box-demo no-padding">
+          <p>
+            Box 3: Border and margin, but no padding — notice how text touches
+            the edge.
+          </p>
+        </div>
+      </section>
+
+      <section id="cards" class="card-container">
+        <h2>Card Examples Using the Box Model</h2>
+        <div class="card">
+          <h3>Card One</h3>
+          <p>
+            This is a styled card with consistent padding, border, and margin.
+            It uses background color to stand out.
+          </p>
+          <button class="btn">Learn More</button>
+        </div>
+
+        <div class="card">
+          <h3>Card Two</h3>
+          <p>
+            Another card with the same structure. Uniform spacing makes them
+            look organized and professional.
+          </p>
+          <button class="btn">Explore</button>
+        </div>
+
+        <div class="card">
+          <h3>Card Three</h3>
+          <p>
+            The third card shows how alignment and spacing work together in a
+            responsive layout.
+          </p>
+          <button class="btn">View Details</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>&copy; 2025 Eugene. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
